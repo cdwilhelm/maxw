@@ -8,7 +8,7 @@
 #
 
 
-pacakge "fail2ban" do
+package "fail2ban" do
   action :install
 end
 
