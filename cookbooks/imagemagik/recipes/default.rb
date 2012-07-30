@@ -7,6 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
-package "ImageMagik" do
+package "ImageMagick" do
   action :install
 end
