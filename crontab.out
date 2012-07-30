@@ -1,4 +1,5 @@
-0 1 * * * /rails/tools/mysql-backup.sh > /dev/null 2&>1
-0 2 * * * /rails/tools/clear-sessions.sh > /dev/null 2&>1
+0 0,8,16 * * * /rails/tools/mysql_backup.sh > /dev/null 2&>1
+0 2,6,12,16,20 * * * /rails/tools/clear_sessions.sh > /dev/null 2&>1
 5 2 * * * rm -f /www/larrykrug/backups/* > /dev/null 2&>1
 0,15,30,45 * * * *  /rails/tools/services.sh
+
