@@ -2,4 +2,5 @@
 0 2,6,12,16,20 * * * /rails/tools/clear_sessions.sh > /dev/null 2&>1
 5 2 * * * rm -f /www/larrykrug/backups/* > /dev/null 2&>1
 0,15,30,45 * * * *  /rails/tools/services.sh
+10 0 * * * /rails/tools/backup2s3.sh > /dev/null 2&>1
 
