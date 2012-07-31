@@ -2,7 +2,7 @@
 
 date=`date '+%Y%m%d%H%M%S'`
 backup_dir="/backup"
-dirs="/etc/postfix /etc/httpd /etc/fail2ban /etc/vsftpd /etc/shadow /etc/passwd /etc/group /home/cwilhelm /root /rails/*/shared /mysql-backup"
+dirs="/etc/postfix /etc/httpd /etc/fail2ban /etc/vsftpd /etc/shadow /etc/passwd /etc/group /home/cwilhelm /root /rails/*/shared /mysql-backup /rails/rxcard/public" 
 exclude="*.log*"
 tar --exclude=$exclude -zcpf ${backup_dir}/maxw-backup-${date}.tgz ${dirs}
 
