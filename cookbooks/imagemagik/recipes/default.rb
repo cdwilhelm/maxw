@@ -10,3 +10,7 @@
 package "ImageMagick" do
   action :install
 end
+
+package "ImageMagick-devel" do
+  action :install
+end
