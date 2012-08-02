@@ -11,7 +11,6 @@ attribute "smtp_provider/fqdn",
   :display_name => "",
   :description => "",
   :required => "required",
-  :default => "",
   :recipes => [
     "postfix::default"
   ]

@@ -10,7 +10,6 @@
       "choice": [
 
       ],
-      "default": "",
       "type": "string",
       "recipes": [
         "postfix::default"
