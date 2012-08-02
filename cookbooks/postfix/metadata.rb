@@ -11,7 +11,7 @@ attribute "smtp_provider/fqdn",
   :display_name => "",
   :description => "",
   :required => "required",
-  :default => "smtp.sendgrid.net",
+  :default => "",
   :recipes => [
     "postfix::default"
   ]
