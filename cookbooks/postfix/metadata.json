@@ -1,0 +1,70 @@
+{
+  "recipes": {
+    "postfix::default": "Install and configure postfix"
+  },
+  "providing": {
+  },
+  "conflicting": {
+  },
+  "name": "postfix",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "maintainer_email": "YOUR_EMAIL",
+  "dependencies": {
+  },
+  "platforms": {
+  },
+  "maintainer": "YOUR_COMPANY_NAME",
+  "license": "All rights reserved",
+  "groupings": {
+  },
+  "suggestions": {
+  },
+  "recommendations": {
+  },
+  "version": "0.0.1",
+  "attributes": {
+    "smtp_provider/password": {
+      "recipes": [
+        "postfix::default"
+      ],
+      "calculated": false,
+      "required": "required",
+      "choice": [
+
+      ],
+      "display_name": "",
+      "description": "",
+      "type": "string"
+    },
+    "smtp_provider/user": {
+      "recipes": [
+        "postfix::default"
+      ],
+      "calculated": false,
+      "required": "required",
+      "choice": [
+
+      ],
+      "display_name": "",
+      "description": "",
+      "type": "string"
+    },
+    "smtp_provider/fqdn": {
+      "recipes": [
+        "postfix::default"
+      ],
+      "default": "smtp.sendgrid.net",
+      "calculated": false,
+      "required": "required",
+      "choice": [
+
+      ],
+      "display_name": "",
+      "description": "",
+      "type": "string"
+    }
+  },
+  "replacing": {
+  },
+  "description": "Installs/Configures postfix"
+}
