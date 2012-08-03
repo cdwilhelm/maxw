@@ -20,6 +20,10 @@ template "/etc/fail2ban/fail2ban.conf" do
   source 'fail2ban.conf.erb'
   
 end
+template "/etc/fail2ban/action.d/myadmin" do
+  source 'myadmin.erb'
+  
+end
 
 
 service "fail2ban" do
