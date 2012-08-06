@@ -6,7 +6,7 @@ mydate=`date '+%Y%m%d%H%M%S'`
 
 for db in $dbs
 do
-mysqldump --defaults-file=/root/.my.cnf  $db > ${dir}/${db}.sql.${mydate}
+mysqldump --defaults-file=/root/.my.cnf  $db | gzip > ${dir}/${db}.sql.${mydate}.gz
 #mysqldump --defaults-file=/root/.my.cnf  mtbcoach_wp > ${dir}/mtbcoach.sql.${mydate}
 #mysqldump --defaults-file=/root/.my.cnf  trekstore_wp > ${dir}/trekstore.sql.${mydate}
 #mysqldump --defaults-file=/root/.my.cnf rxcard_production > ${dir}/rxcard.sql.${mydate}
