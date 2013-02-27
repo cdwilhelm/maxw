@@ -1,0 +1,69 @@
+{
+  "dependencies": {
+  },
+  "name": "postfix",
+  "maintainer_email": "YOUR_EMAIL",
+  "attributes": {
+    "smtp_provider/fqdn": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "postfix::default"
+      ],
+      "display_name": "",
+      "description": ""
+    },
+    "smtp_provider/user": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "postfix::default"
+      ],
+      "display_name": "",
+      "description": ""
+    },
+    "smtp_provider/password": {
+      "required": "required",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "type": "string",
+      "recipes": [
+        "postfix::default"
+      ],
+      "display_name": "",
+      "description": ""
+    }
+  },
+  "license": "All rights reserved",
+  "suggestions": {
+  },
+  "platforms": {
+  },
+  "maintainer": "YOUR_COMPANY_NAME",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "version": "0.0.1",
+  "recommendations": {
+  },
+  "recipes": {
+    "postfix::default": "Install and configure postfix"
+  },
+  "groupings": {
+  },
+  "conflicting": {
+  },
+  "replacing": {
+  },
+  "description": "Installs/Configures postfix",
+  "providing": {
+  }
+}
